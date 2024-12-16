@@ -39,7 +39,7 @@ export function MobileMenu() {
 
                     <nav className="flex flex-1 flex-col items-center gap-6 p-8 text-white">
                         {navLinks.map(({ label, href }: { label: string, href: string }) => (
-                            <Link href={href} className="text-lg" onClick={() => setOpen(false)}>
+                            <Link href={href} key={label} className="text-lg" onClick={() => setOpen(false)}>
                                 {label}
                             </Link>
                         ))}
