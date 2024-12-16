@@ -13,8 +13,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-black/50" />
             </div>
 
-            {/* Content */}
-            <div className="relative container mx-auto px-0 lg:px-32 pt-32 lg:pt-80">
+            <div className="relative container mx-auto px-0 lg:px-32 pt-32 lg:pt-64">
                 <div className="flex items-center justify-center lg:justify-start lg:items-start flex-col gap-8">
                     <h1 className={`text-white font-bebas text-4xl lg:text-[120px] font-bold tracking-wider leading-none text-center lg:text-left`}>
                         VICTORIA

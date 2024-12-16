@@ -30,7 +30,7 @@ export function Carousel({ children }: CarouselProps) {
   }, [emblaApi, onSelect])
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">{children}</div>
       </div>
