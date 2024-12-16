@@ -9,7 +9,7 @@ interface NavLink {
     href: string;
 }
 
-const navLinks: NavLink[] = [
+export const navLinks: NavLink[] = [
     { label: "SUBBD", href: "/subbd" },
     { label: "AI Features", href: "/ai-features" },
     { label: "AI Creator", href: "/ai-creator" },

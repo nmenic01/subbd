@@ -11,6 +11,7 @@ import {
 import { Heart, Logo } from "./icons"
 import { useState } from 'react'
 import { SocialLinks } from './social-links'
+import { navLinks } from './navbar'
 
 export function MobileMenu() {
     const [open, setOpen] = useState<boolean>(false);
@@ -37,27 +38,14 @@ export function MobileMenu() {
                     </div>
 
                     <nav className="flex flex-1 flex-col items-center gap-6 p-8 text-white">
-                        <Link href="/subbd" className="text-lg" onClick={() => setOpen(false)}>
-                            SUBBD
-                        </Link>
-                        <Link href="/ai-features" className="text-lg" onClick={() => setOpen(false)}>
-                            AI Features
-                        </Link>
-                        <Link href="/ai-creator" className="text-lg" onClick={() => setOpen(false)}>
-                            AI Creator
-                        </Link>
-                        <Link href="/roadmap" className="text-lg" onClick={() => setOpen(false)}>
-                            Roadmap
-                        </Link>
-                        <Link href="/team" className="text-lg" onClick={() => setOpen(false)}>
-                            Team
-                        </Link>
-                        <Link href="/litepaper" className="text-lg" onClick={() => setOpen(false)}>
-                            Litepaper
-                        </Link>
+                        {navLinks.map(({ label, href }: { label: string, href: string }) => (
+                            <Link href={href} className="text-lg" onClick={() => setOpen(false)}>
+                                {label}
+                            </Link>
+                        ))}
                     </nav>
 
-                    <div className="flex flex-col items-center gap-6 p-8">
+                    <div className="flex flex-col items-center gap-6 p-8 mb-24">
                         <SocialLinks variant="header" />
                         <Button
                             size="lg"
