@@ -29,6 +29,10 @@ To run the project locally, follow these steps:
    pnpm start
    ```
 
+## Demo
+
+The demo is available at [https://subbd-o26t.vercel.app/](https://subbd-o26t.vercel.app/)
+
 ## Features
 
 - **Rapid development with shadcn**: 
